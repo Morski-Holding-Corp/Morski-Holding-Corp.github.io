@@ -1,0 +1,74 @@
+/** Déclaration initiales **/
+
+$primary: #88e8e8;
+$secondary: black;
+
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('../Fonts/ethnocentric/ethnocentric_rg.otf');
+}
+@font-face {
+    font-family: "Space-Age";
+    src: url('../Fonts/space_age/space\ age.ttf');
+}
+@font-face {
+    font-family: 'Lemon Milk Bold';
+    src: url('../Fonts/lemon_milk/LEMONMILK-Bold.otf');
+}
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../Fonts/lemon_milk/LEMONMILK-Regular.otf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/** Styles de page **/
+
+header {
+    height: 12vh;
+    width: 94vw;
+    display: flex;
+    background: $secondary;
+    border-radius: 50em;
+    position: fixed;
+    margin: 0px;
+    top: 10px;
+    left: 3vw;
+    font-family: 'Lemon Milk';
+    .logo {
+        display: flex;
+        height: 10vh;
+        border-radius: 50em;
+        padding: 1vh;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        line-height: 3vh;
+        font-size: 5vh;
+        color: $secondary;
+        text-shadow: $primary 1px 1px 1px, $primary 1px -1px 1px, $primary -1px -1px 1px, $primary -1px 1px 1px;
+        &-img {
+            height: inherit;
+        }
+        &:hover {
+            background: #2A2A2A;
+        }
+    }
+}
+main {
+    padding-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $primary;
+    .gen-title {
+        background: $secondary;
+        font-size: 5vw;
+        font-family: 'Lemon Milk Bold';
+        text-shadow: $primary 1px 1px 1px, $primary 1px -1px 1px, $primary -1px -1px 1px, $primary -1px 1px 1px;
+        padding: 20px;
+    }
+}
